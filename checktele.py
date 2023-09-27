@@ -485,7 +485,7 @@ async def _(event):
             except Exception as eee:
                 await sython.send_message(event.chat_id, f'''Error : @{username}''')
 Threads=[] 
-for t in range(100):
+for t in range(200):
     x = threading.Thread(target=_)
     le = threading.Thread(target=gen_user)
     x.start()
